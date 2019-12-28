@@ -1,3 +1,90 @@
+-- function loadInterior(vParam0, sParam3, iParam4, iParam5, iParam6, bParam7, iParam8)
+-- 	local =  bVar0;
+
+-- 	bVar0 = func_1886(iParam4);
+-- 	if not IsValidInterior(iParam8) then
+-- 		if (iParam5 ~= 0) then
+-- 			iParam8 = GetInteriorAtCoordsWithTypeHash(vParam0, iParam5)
+-- 		else
+-- 			iParam8 = GetInteriorAtCoords(vParam0)
+-- 		end
+-- 	if IsValidInterior(iParam8) then
+	
+-- 		if func_1887(iParam4) ~= bVar0 or IsInteriorEntitySetActive(iParam8, sParam3) ~= bVar0 then
+
+-- 			if func_1888(iParam8, iParam6, bParam7) then
+			
+-- 				if (bVar0) then
+				
+-- 					ActivateInteriorEntitySet(iParam8, sParam3, 0)
+-- 					func_1889(iParam4)
+-- 					if (bParam7) then
+					
+-- 						_0x2533F2AB0EB9C6F9(iParam8, 1)
+-- 						_0xFE2B3D5500B1B2E4(iParam8, 1)	
+-- 				else
+-- 					DeactivateInteriorEntitySet(iParam8, sParam3, 1)
+-- 					func_1890(iParam4)
+-- 					if (bParam7) then
+-- 						Citizen.InvokeNative(_0x2533F2AB0EB9C6F9, iParam8, 0)
+-- 						Citizen.InvokeNative(_0xFE2B3D5500B1B2E4, iParam8, 0)
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	end
+-- end
+
+-- function func_1886(iParam0)
+
+-- 	local iVar0 = 0
+-- 	local iVar1 = 0
+-- 	local iVar2 = 0
+
+-- 	iVar0 = iParam0;
+-- 	iVar1 = (iVar0 / 31)
+-- 	iVar2 = (iVar0 % 31)
+-- 	return IsBitSet(&(Global_1938569->f_28[iVar1]), iVar2)
+-- end		
+
+-- function func_1887(iParam0)
+
+-- 	local iVar0 = 0
+-- 	local iVar1 = 0
+-- 	local iVar2 = 0
+
+-- 	iVar0 = iParam0
+-- 	iVar1 = (iVar0 / 31)
+-- 	iVar2 = (iVar0 % 31)
+-- 	return IsBitSet(&(Global_1938569->f_37[iVar1]), iVar2)
+-- end
+
+-- function func_1888(iParam0, iParam1, bParam2)
+-- 	if (bParam2) then
+-- 		if IsInteriorReady(iParam0) then
+-- 			return false
+-- 	end			
+-- 	if (iParam1 || Global_1938569->f_288) then	
+-- 		return true;
+-- 	end	
+-- 	return Citizen.InvokeNative(_0xBC8A281FF125C655, ~= iParam0 and GetInteriorFromEntity(Global_35) ~= iParam0 || IsScreenFadedOut())
+-- end
+
+-- function func_1889(iParam0)
+-- 	local iVar0 = 0
+-- 	local iVar1 = 0
+-- 	local iVar2 = 0
+
+-- 	iVar0 = iParam0;
+-- 	iVar1 = (iVar0 / 31);
+-- 	iVar2 = (iVar0 % 31);
+-- 	SetBit(Global_1938569->f_37[iVar1], iVar2)
+-- end
+	
+--^^^^-- decompiled partially converted to lua --  source of windows for Saloon and Bank in Valentine, as well as interior of Jail.  Saving for later.
+
+
+
 --------------------------------                                   ############# -- Valentine Multiplayer (Online) Components -- ###############                                       ----------------------
 -- RequestImap(731209239)  -- Fast Travel Marker Valentine Train Station
 -- RequestImap(824748066)  -- Event Marker Western side of town along path ( -229.93, 946.05, 138.33 )
